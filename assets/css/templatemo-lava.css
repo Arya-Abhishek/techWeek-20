@@ -757,6 +757,7 @@ welcome
   }
 }
 .welcome-area .header-text h1 {
+  font-style: 'Lato', sans-serif;
   font-size: 10vw;
   font-weight: 900;
   line-height: 120px;
@@ -766,18 +767,21 @@ welcome
 }
 @media screen and (max-width: 600px) {
   .welcome-area .header-text h1 {
+    font-style: 'Lato', sans-serif;    
     margin-top: 80px;
     line-height: 60px;
-    font-size: 12vw;
+    font-size: 8vw;
   }
 }
 .welcome-area .header-text h1 em {
+  font-size: 15vh ;
+  letter-spacing: .9rem;
   font-style: normal;
   /* color: #fba70b; */
 }
 
 .welcome-area .header-text p {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 22px;
   color: #e0dbdb;
   line-height: 30px;
