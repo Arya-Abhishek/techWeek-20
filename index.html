@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="TemplateMo" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto+Slab|Comfortaa"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <title>Indicon 2020</title>
+
+    <!-- Additional CSS Files -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css" />
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <!-- <div id="preloader">
+      <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div> -->
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a
+                href="index.html"
+                class="logo"
+                style="color: rgb(255, 255, 255);"
+              >
+                IEEE
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#welcome" class="menu-item">Home</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#about" class="menu-item">About</a>
+                </li>
+                <!-- <li class="scroll-to-section">
+                  <a href="#tracks" class="menu-item"></a>
+                </li> -->
+                <!-- class="scroll-to-section" -->
+                <li>
+                  <!-- class="menu-item" -->
+                  <!-- target="_blank" -->
+                  <a href="#timeline">Event</a>
+                </li>
+
+                <li>
+                    <!-- class="menu-item" -->
+                    <!-- target="_blank" -->
+                    <a href="#timeline">Partners</a>
+                  </li>
+
+                <!--
+                <li class="submenu">
+                  <a href="javascript:;">Author Section</a>
+                  <ul>
+                    <li><a href="timeline.html">Call for Papers</a></li>
+                    <li>
+                      <a href="" class="menu-item"
+                        >Call for Tutorial Proposal</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="menu-item"
+                        >Call for Workshop Proposal</a
+                      >
+                    </li>
+                    <li><a href="" class="menu-item">Blog</a></li>
+                  </ul>
+                </li>
+                -->
+                
+                <li class="scroll-to-section">
+                  <a href="#contact-us" class="menu-item">Contact Us</a>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+      <!-- ***** Header Text Start ***** -->
+      <div class="header-text">
+        <div class="container">
+          <div class="row">
+            <!-- col-md-12 col-sm-12 col-xs-12 -->
+            <div
+              class="left-text col-lg-6 col-md-6 col-sm-6"
+              data-scroll-reveal="enter left move 30px over 0.6s after 0.4s"
+            >
+              <h1 class="hero-txt" style="color: azure;opacity: 0.8;">
+                techWeek <br />
+                <em style="color: #007bff;opacity: 0.6;">2020</em>
+              </h1>
+
+              <p class="col-12">
+                the Technical week of NSUT
+              </p>
+              <!-- <a href="#about" class="main-button-slider">KNOW US BETTER</a> -->
+              <div class="clock" style="color:black;">
+                <ul>
+                  <li><span id="days"></span>Days</li>
+                  <li><span id="hours"></span>Hours</li>
+                  <li><span id="minutes"></span>Minutes</li>
+                  <li><span id="seconds"></span>Seconds</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ***** Header Text End ***** -->
+
+      <script>
+        const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+
+        let countDown = new Date("Mar 27, 2020 00:00:00").getTime(),
+          x = setInterval(function() {
+            let now = new Date().getTime(),
+              distance = countDown - now;
+
+            (document.getElementById("days").innerText = Math.floor(
+              distance / day
+            )),
+              (document.getElementById("hours").innerText = Math.floor(
+                (distance % day) / hour
+              )),
+              (document.getElementById("minutes").innerText = Math.floor(
+                (distance % hour) / minute
+              )),
+              (document.getElementById("seconds").innerText = Math.floor(
+                (distance % minute) / second
+              ));
+          }, second);
+      </script>
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+<!-- jquery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- Globe -->
+    <script src="assets/js/three.r95.min.js"></script>
+    <script src="assets/js/vanta.globe.min.js"></script>
+    <script>
+      VANTA.GLOBE({
+        el: "#welcome",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        backgroundColor: 0x0,
+        color: 0x7aff,
+        color2: 0xffffff
+      });
+    </script>
+  </body>
+</html>

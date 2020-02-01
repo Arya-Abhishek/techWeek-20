@@ -53,6 +53,12 @@ h6 {
   line-height: 2em;
   color: #FFF;
 }*/
+
+h1 {
+  font-style: 'Lato', sans-serif !important;
+}
+
+
 .header .scroll-button {
   color: #fff;
   font-size: 20px;
